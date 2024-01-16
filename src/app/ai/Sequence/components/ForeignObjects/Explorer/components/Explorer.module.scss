@@ -1,0 +1,38 @@
+
+
+.Explorer {
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    justify-content: flex-end;
+    align-items: center;
+    border : 1px solid #3c5d77;
+    border-radius: 8px;
+    background-color: #0b0b0b
+  }
+
+  &__node__container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border : 1px solid #3c5d77;
+    border-radius: 8px;
+    width: 100%;
+    height: 100%;
+    background-color: #121212;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    padding: 0.5rem;
+  }
+
+
+  &__wrapper {
+    height : 600px;
+
+  }
+
+
+}

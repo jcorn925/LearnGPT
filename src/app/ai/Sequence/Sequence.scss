@@ -1,0 +1,101 @@
+.sequence-node {
+  position: relative;
+  overflow: hidden;
+}
+
+.rd3t-line {
+  stroke: #ccc;
+  stroke-width: 2px;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  fill: none;
+}
+
+.rd3t-node {
+  stroke: white !important;
+  stroke-width: 1px !important;
+}
+
+.CollapseButton {
+  width: 100%;
+  background-color: black;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+
+}
+
+.custom-link {
+  stroke: #ccc !important;
+  stroke-width: 2px;
+  stroke-linecap: round;
+  // stroke-linejoin: round;
+  // fill: none;
+  // stroke-dasharray: 1000;
+  // stroke-dashoffset: 1000;
+  // animation: flow 2s linear forwards;
+}
+
+@keyframes flow {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+.branch-line {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  color: white !important;
+  animation: draw 2s linear forwards;
+}
+
+@keyframes draw {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+
+.nameInput {
+  width: 100%;
+  height: 120px;
+  border: none;
+  outline: none;
+  font-size: 1.5vw;
+  background-color: rgb(26, 26, 26);
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+
+}
+
+
+
+.node {
+  border: 1px solid #3985c2;
+  opacity: 0;
+  transition: opacity 2s ease-in-out;
+}
+
+.node.selected {
+  opacity: 1;
+}
+
+
+.treeWrapper {
+  width: 50%;
+  // padding-right: 40px;
+  height: 100vh;
+  background-image: -webkit-repeating-radial-gradient(center center, rgba(255, 255, 255, 0.32), rgba(255, 255, 255, 0.19) 1px, transparent 1px, transparent 100%);
+  background-size: 48px 48px;
+  min-height: calc(100vh - 49px);
+  z-index: 0;
+
+}

@@ -1,0 +1,22 @@
+
+.AddNode {
+
+  &__container {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    width: 100%;
+    justify-content: center;
+    padding : 4px;
+    background-color: var(--primary-bg);
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-left: 1px solid var(--addNode-border-left);
+    border-right: 1px solid var(--addNode-border-left);
+    border-bottom: 1px solid var(--addNode-border);
+
+    flex-direction: row;
+    z-index: 40000;
+  }
+
+}
