@@ -1,0 +1,72 @@
+.Tabs {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  background-color: var(--primary-bg);
+  margin-left: 8px;
+
+}
+
+
+.Tabs-container {
+  width: 100%;
+  background-color: #181818;
+  border-bottom: #181818;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+    /* box-shadow:  1px 1px 1px 1px #181818; */
+    /* padding-left: 8px; */
+    /* border-bottom: black; */
+    /* border-bottom: 4px solid #000000; */
+}
+
+.Tabs__Tab {
+  display: inline-block;
+  padding: 1em;
+  padding-bottom: 5px;
+  background: hsla(0, 0%, 0%, 0);
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+}
+
+.Tabs__TabAlt {
+  display: inline-block;
+  padding: 2em;
+  background: hsl(0, 0%, 93%);
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+}
+
+.Tabs__Underline-Container {
+  /* border-bottom: 3px solid rgb(11, 11, 11); */
+
+}
+
+.Tabs__Tab:hover,
+.Tabs__Tab--active {
+  background: rgba(255, 105, 180, 0);
+  color: white;
+}
+
+.Tabs__Underline {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  border-bottom: 3px solid;
+  transition: left 0.3s ease-out, width 0.3s ease-out;
+  z-index: 100;
+}
+
+.Tabs__UnderlineWhole {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  border-bottom: 3px solid rgb(9, 9, 9);
+  transition: left 0.3s ease-out, width 0.3s ease-out;
+
+}

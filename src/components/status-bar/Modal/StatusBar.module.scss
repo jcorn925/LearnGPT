@@ -1,0 +1,24 @@
+
+.modal {
+  position: absolute;
+  bottom: 40px;
+  right: 10px;
+  width: 300px;
+  height: 200px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 10000000000000000;
+  background-color: var(--primary2-bg);
+  border-radius: 10px;
+  border: 1px solid  var(--border-color);
+  display: flex;
+  color: var(--primary-text);
+  padding: 8px;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
